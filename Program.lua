@@ -1,4 +1,4 @@
 require "__init__"
+----------------------------------------
 
-print(Dist(-1,0,3,3))
-print(Angle(1,2,3,4))
+DG.Vector(1,2,3,4):cross3d({1,4,2,0}):print()

@@ -1,6 +1,6 @@
 math.randomseed(os.time())
 
----@class lstg.Random
+---@class Lstg.Random
 ran = {}
 
 ---Get Random Integer between a and b (Including a and b)
