@@ -1,20 +1,20 @@
--- 元表
+-- metatable
 local vector = {}
 
 local function NewVector(x, y, z, w)
     if type(x) ~= "table" or getmetatable(x) then
-        -- 各元素
+        -- by numbers
         return setmetatable({
             x or 0, y or 0, z or 0, w or 0
         }, vector)
     end
     if not y then
-        -- 数组或其他向量
+        -- by array
         return setmetatable({
             x[1] or 0, x[2] or 0, x[3] or 0, x[4] or 0
         }, vector)
     end
-    -- 旋转轴和角度
+    -- by axis and angle
     local c, s = cos(y / 2), sin(y / 2)
     x, y, z = x[1] or 0, x[2] or 0, x[3] or 0
     local dist = math.sqrt(x * x + y * y + z * z)
