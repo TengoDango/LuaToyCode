@@ -3,15 +3,6 @@
 ## Todo Task
 
 ```
-# PreDefine
-lstg.DegreeMath
-    sin, cos, tan, asin, acos, atan, atan2, hypot, abs, int,
-    Dist, Angle
-lstg.Random
-    ran:Int, ran:Float, ran:Sign
-```
-
-```
 # Math
 Integral Calculate: Adaptive Simpson Rule
 HSV-RGB Transformation
