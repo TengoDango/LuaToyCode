@@ -4,7 +4,6 @@
 
 ```
 # Code
-TryCatch: Try-Catch-Else-Finally
 HotReload
 Data Structure and Algorithm
 ```
@@ -12,13 +11,14 @@ Data Structure and Algorithm
 ```
 # LuaSTG
 RenderTarget Simplification
-Tile Render
 Shader: HLSL
 ```
 
 ## Completed Task
 
 ```
+TryCatch: Try-Catch-Else-Finally
+Tile Render
 HSV-RGB Transformation
 Integral Calculate: Adaptive Simpson Rule
 ViewMode Transformation

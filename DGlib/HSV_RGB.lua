@@ -5,7 +5,7 @@
 ---@return integer R # 0 - 255
 ---@return integer G # 0 - 255
 ---@return integer B # 0 - 255
-local function HSVtoRGB(H, S, V)
+function DG.HSVtoRGB(H, S, V)
     H = H % 360
     V = V * 255
     local I = int(H / 60)
@@ -28,7 +28,6 @@ local function HSVtoRGB(H, S, V)
         return V, P, Q
     end
 end
-DG.HSVtoRGB = HSVtoRGB
 
 ---RGB to HSV
 ---@param R integer # 0 - 255
@@ -37,7 +36,7 @@ DG.HSVtoRGB = HSVtoRGB
 ---@return number H # 0 - 360
 ---@return number S # 0 - 1
 ---@return number v # 0 - 1
-local function RGBtoHSV(R, G, B)
+function DG.RGBtoHSV(R, G, B)
     local H, S, V
     local Cmax = max(R, G, B)
     local Cmin = min(R, G, B)
@@ -63,4 +62,3 @@ local function RGBtoHSV(R, G, B)
 
     return H, S, V
 end
-DG.RGBtoHSV = RGBtoHSV

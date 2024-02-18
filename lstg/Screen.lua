@@ -32,3 +32,5 @@ lstg.view3d = {
 screen = {
     width = 640, height = 480, dx = 0, dy = 0, scale = 3,
 }
+
+lstg.viewmode = "world"

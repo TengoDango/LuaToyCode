@@ -1,4 +1,17 @@
 require "__init__"
 ----------------------------------------
 
-DG.Vector(1,2,3,4):cross3d({1,4,2,0}):print()
+print(DG.TryCatch {
+    try = function()
+        print(ran:Float(1,3))
+    end,
+    catch = function(errmsg)
+        print(errmsg)
+    end,
+    finally = function ()
+        print("this is a finally function")
+    end,
+    elsedo = function ()
+        print("successful")
+    end
+})

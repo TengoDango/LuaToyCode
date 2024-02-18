@@ -8,7 +8,7 @@ end
 ---@param right number
 ---@param maxerror number? # default = 1e-9
 ---@return number
-local function Integral(func, left, right, maxerror)
+function DG.Integral(func, left, right, maxerror)
     maxerror = maxerror or 1e-9
 
     local mid = (left + right) / 2
@@ -19,8 +19,7 @@ local function Integral(func, left, right, maxerror)
     if error < maxerror then
         return leftInt + rightInt + error
     else
-        return Integral(func, left, mid, maxerror / 2)
-            + Integral(func, mid, right, maxerror / 2)
+        return DG.Integral(func, left, mid, maxerror / 2)
+            + DG.Integral(func, mid, right, maxerror / 2)
     end
 end
-DG.Integral = Integral

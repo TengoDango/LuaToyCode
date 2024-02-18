@@ -35,3 +35,24 @@ end
 ---@return lstg.Color
 function Color(a, r, g, b)
 end
+
+---@alias lstg.BlendMode
+---| '""'
+---| '"mul+alpha"'
+---| '"mul+add"'
+---| '"mul+rev"'
+---| '"mul+sub"'
+---| '"add+alpha"'
+---| '"add+add"'
+---| '"add+rev"'
+---| '"add+sub"'
+---| '"alpha+bal"'
+---| '"mul+min"'
+---| '"mul+max"'
+---| '"mul+mul"'
+---| '"mul+screen"'
+---| '"add+min"'
+---| '"add+max"'
+---| '"add+mul"'
+---| '"add+screen"'
+---| '"one"'
