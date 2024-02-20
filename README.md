@@ -4,19 +4,13 @@
 
 ```
 # Code
-HotReload
 Data Structure and Algorithm
-```
-
-```
-# LuaSTG
-RenderTarget Simplification
-Shader: HLSL
 ```
 
 ## Completed Task
 
 ```
+RenderTarget Simplification
 TryCatch: Try-Catch-Else-Finally
 Tile Render
 HSV-RGB Transformation
