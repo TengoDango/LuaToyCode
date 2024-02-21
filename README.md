@@ -2,10 +2,7 @@
 
 ## Todo Task
 
-```
-# Code
-Data Structure and Algorithm
-```
+WAITING FOR NEW TASKS
 
 ## Completed Task
 
